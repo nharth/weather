@@ -25,5 +25,5 @@ button.addEventListener('click', function(){
         console.log(windValue)
     })
 
-// .catch(err => alert ("Invalid city"))
+.catch(err => alert ("Invalid city"))
 })
