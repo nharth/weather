@@ -18,12 +18,11 @@ button.addEventListener('click', function(){
         temp.innerHTML = tempValue + "°F";    
         desc.innerHTML = descValue;
         wind.innerHTML = "Wind: " + windValue + "mph";
-        console.log(data)
-        console.log(nameValue)
-        console.log(temp)
-        console.log(descValue)
-        console.log(windValue)
+
     })
 
-.catch(err => alert ("Invalid city"))
+.catch(err => {
+    alert ("Invalid city");
+    name.innerHTML = "Invalid city";
+})
 })
